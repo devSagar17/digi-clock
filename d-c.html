@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="clock-container">
+    <h1>Digital Clock</h1>
+    <div id="date"></div>
+    <div class="clock">
+      <div class="clock-item" id="hours" onclick="changeHours()">
+        <div class="circle">
+          <div class="time" id="hours-val">12</div>
+        </div>
+        <div class="label">HOURS</div>
+      </div>
+      <div class="clock-item" id="minutes" onclick="changeMinutes()">
+        <div class="circle">
+          <div class="time" id="minutes-val">20</div>
+        </div>
+        <div class="label">MINUTES</div>
+      </div>
+      <div class="clock-item" id="seconds" onclick="changeSeconds()">
+        <div class="circle">
+          <div class="time" id="seconds-val">58</div>
+        </div>
+        <div class="label">SECONDS</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
